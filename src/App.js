@@ -1,7 +1,24 @@
+import React, { useEffect, useState } from "react"
 import "./App.css"
 import suiteIcons from "./components/img/bg-hsdc.png"
+import axios from "axios"
 
 function App() {
+	const [deck, setDeck] = useState()
+
+	useEffect(() => {
+		try {
+			axios
+				.get(`https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1`)
+				.then((res) => {
+					console.log(res.data)
+					setDeck(res.data)
+				})
+		} catch (err) {
+			console.log(err)
+		}
+	}, [])
+
 	return (
 		<div className="App">
 			<header className="App-header">
