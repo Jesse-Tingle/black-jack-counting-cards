@@ -25,13 +25,73 @@
   color: white;
 }
 
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.top button {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+}
+
+.chips button {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='13' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+border-radius: 100px;
+height: 100px;
+width: 100px;
+box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+justify-content: center;
+padding: 0;
+}
+
+button.top-chip {
+  margin-bottom: 15%;
+}
+
+button.five {
+  background-color: #ba2b2bfc;
+}
+
+button.ten {
+  background-color: #3026ABFC;
+}
+
+button.twenty {
+  background-color: #1cac21fc;
+}
+
+button.fifty {
+  background-color: #e3db00fc;
+}
+
+button.hundred {
+  background-color: #7b02b0fc;
+}
+
+button.five-hundred {
+  background-color: #00bdbafc;
+}
+
+.end-game {
+  background-color: red;
+}
+
 .title {
   display: flex;
-  color: yellow;
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  margin-top: -1em;
-  font-weight: 900;
+    color: yellow;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    margin-top: -1.5em;
+    font-weight: 900;
+    padding-left: 45%;
+    padding-right: 45%;
 }
 
 .score {
@@ -42,6 +102,9 @@
     border-left: 3px solid white;
     border-bottom: 3px solid white;
     width: 23%;
+    position: relative;
+    z-index: 2;
+    margin-top: -4%;
 }
 
 .wins {
@@ -72,7 +135,8 @@
 .card-totals {
   display: flex;
   justify-content: center;
-  padding-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -91,6 +155,10 @@
     height: 12em;
 }
 
+.game-buttons {
+  margin-bottom: 5%;
+}
+
 
 
 button {
@@ -102,6 +170,9 @@ button {
     font-size: .7em;
 }
 
+.deal {
+  background-color: darkorange;
+}
 .hit {
   background-color: lime;
 }
