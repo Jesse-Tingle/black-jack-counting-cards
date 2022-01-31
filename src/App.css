@@ -25,14 +25,18 @@
   color: white;
 }
 
-.top {
+.title {
   display: flex;
+  color: yellow;
+  font-size: 2.5em;
+  font-weight: 900;
   justify-content: center;
 }
 
-.top button {
-  padding-left: 3em;
-  padding-right: 3em;
+.top {
+  display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 .row {
@@ -81,17 +85,7 @@ button.five-hundred {
 
 .end-game {
   background-color: red;
-}
-
-.title {
-  display: flex;
-    color: yellow;
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    margin-top: -1.5em;
-    font-weight: 900;
-    padding-left: 45%;
-    padding-right: 45%;
+    margin-top: 3em;
 }
 
 .score {
@@ -101,10 +95,10 @@ button.five-hundred {
     border-right: 3px solid white;
     border-left: 3px solid white;
     border-bottom: 3px solid white;
-    width: 23%;
-    position: relative;
-    z-index: 2;
-    margin-top: -4%;
+    height: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
 }
 
 .wins {
@@ -135,8 +129,6 @@ button.five-hundred {
 .card-totals {
   display: flex;
   justify-content: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -152,7 +144,7 @@ button.five-hundred {
 
 .Suite-Icons {
   opacity: 20%;
-    height: 12em;
+    height: 10em;
 }
 
 .game-buttons {
@@ -163,11 +155,12 @@ button.five-hundred {
 
 button {
   border-radius: 40px;
-    width: 9em;
-    height: 4em;
+    width: 8em;
+    height: 3em;
     border: none;
     font-family: 'Source Code Pro', monospace;
-    font-size: .7em;
+    font-size: .6em;
+    margin-right: 9%;
 }
 
 .deal {
