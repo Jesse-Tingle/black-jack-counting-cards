@@ -1,0 +1,38 @@
+.score {
+    display: flex;
+      justify-content: center;
+      border-top: 3px solid white;
+      border-right: 3px solid white;
+      border-left: 3px solid white;
+      border-bottom: 3px solid white;
+      height: 3em;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 2em;
+  }
+
+
+.wins {
+    padding-right: 0%;
+      border-right: 3px solid white;
+  }
+  
+  .w {
+    border-bottom: 3px solid white;
+      width: 5em;
+  }
+  
+  .losses {
+    padding-right: 0%;
+    border-right: 3px solid white;
+  }
+  
+  .l {
+    border-bottom: 3px solid white;
+      width: 5em;
+  }
+  
+  .d {
+    border-bottom: 3px solid white;
+      width: 5em;
+  }

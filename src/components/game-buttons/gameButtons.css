@@ -1,0 +1,32 @@
+.game-buttons {
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 25%;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  
+  .deal, .stand, .split {
+    margin-bottom: 11%;
+  }
+
+  .split {
+    background-color: dodgerblue;
+  }
+
+  .deal {
+    background-color: darkorange;
+  }
+  .hit {
+    background-color: lime;
+  }
+  .stand {
+    background-color: red;
+  }
+  .double-down {
+    background-color: yellow;
+  }

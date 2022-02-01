@@ -45,85 +45,10 @@
   padding-right: 5%;
 }
 
-.chips button {
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='13' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
-border-radius: 100px;
-height: 100px;
-width: 100px;
-box-shadow: 0 0 20px rgb(0 0 0 / 50%);
-justify-content: center;
-padding: 0;
-}
-
-button.top-chip {
-  margin-bottom: 15%;
-}
-
-button.five {
-  background-color: #ba2b2bfc;
-}
-
-button.ten {
-  background-color: #3026ABFC;
-}
-
-button.twenty {
-  background-color: #1cac21fc;
-}
-
-button.fifty {
-  background-color: #e3db00fc;
-}
-
-button.hundred {
-  background-color: #7b02b0fc;
-}
-
-button.five-hundred {
-  background-color: #00bdbafc;
-}
 
 .end-game {
   background-color: red;
     margin-top: 3em;
-}
-
-.score {
-  display: flex;
-    justify-content: center;
-    border-top: 3px solid white;
-    border-right: 3px solid white;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    height: 3em;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2em;
-}
-
-.wins {
-  padding-right: 0%;
-    border-right: 3px solid white;
-}
-
-.w {
-  border-bottom: 3px solid white;
-    width: 5em;
-}
-
-.losses {
-  padding-right: 0%;
-  border-right: 3px solid white;
-}
-
-.l {
-  border-bottom: 3px solid white;
-    width: 5em;
-}
-
-.d {
-  border-bottom: 3px solid white;
-    width: 5em;
 }
 
 .card-totals {
@@ -133,25 +58,20 @@ button.five-hundred {
   font-weight: 600;
 }
 
-.user-info {
-  display: flex;
-  padding-right: 20em;
-}
 
-.dealer-info {
-  display: flex;
-}
 
 .Suite-Icons {
   opacity: 20%;
     height: 10em;
 }
 
-.game-buttons {
-  margin-bottom: 5%;
+.bottom {
+  display: flex;
 }
 
-
+.place-bet {
+  display: flex;
+}
 
 button {
   border-radius: 40px;
@@ -160,23 +80,6 @@ button {
     border: none;
     font-family: 'Source Code Pro', monospace;
     font-size: .6em;
-    margin-right: 9%;
-}
-
-.deal {
-  background-color: darkorange;
-}
-.hit {
-  background-color: lime;
-}
-.stand {
-  background-color: red;
-}
-.double-down {
-  background-color: yellow;
-}
-.split {
-  background-color: dodgerblue;
 }
 
 .App-link {
