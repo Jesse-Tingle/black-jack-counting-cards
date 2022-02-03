@@ -1,11 +1,37 @@
-import React from "react"
+import axios from "axios"
+import React, { useState } from "react"
+import Button from "../utils/Button.js"
 import "./gameButtons.css"
 
-function GameButtons() {
+function GameButtons(props) {
+	const [user, setUser] = useState([])
+	const [dealer, setDealer] = useState([])
+
+	let drawOne = () => {
+		axios
+			.get(`https://deckofcardsapi.com/api/deck/${props.deckId}/draw/?count=1`)
+			.then((res) => {
+				console.log(res.data)
+			})
+	}
+
+	let deal = () => {
+		// creates user pile
+		axios.get(
+			`https://deckofcardsapi.com/api/deck/${props.deckId}/pile/user/add/?cards=`
+		)
+		// creates dealer pile
+		axios.get(
+			`https://deckofcardsapi.com/api/deck/${props.deckId}/pile/dealer/add/?cards=`
+		)
+		setUser(drawOne())
+	}
+
 	return (
 		<div className="game-buttons">
+			<h2>{props.deckId}</h2>
 			<div className="col one">
-				<button className="deal">Deal</button>
+				<Button className="deal" title={"Deal"} action={deal} />
 				<button className="hit">Hit</button>
 			</div>
 			<div className="col two">

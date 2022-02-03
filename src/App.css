@@ -48,7 +48,8 @@
 
 .end-game {
   background-color: red;
-    margin-top: 3em;
+  margin-top: 3em;
+  margin-left: 3em;
 }
 
 .card-totals {
